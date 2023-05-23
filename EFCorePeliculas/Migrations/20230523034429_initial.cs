@@ -6,7 +6,7 @@ using NetTopologySuite.Geometries;
 
 namespace EFCorePeliculas.Migrations
 {
-    public partial class inicial : Migration
+    public partial class initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

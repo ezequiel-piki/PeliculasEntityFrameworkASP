@@ -13,8 +13,8 @@ using NetTopologySuite.Geometries;
 namespace EFCorePeliculas.Migrations
 {
     [DbContext(typeof(AplicacionDbContext))]
-    [Migration("20230522203739_inicial")]
-    partial class inicial
+    [Migration("20230523034429_initial")]
+    partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

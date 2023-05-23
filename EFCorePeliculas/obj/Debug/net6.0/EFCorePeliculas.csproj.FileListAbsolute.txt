@@ -132,3 +132,7 @@ C:\Users\Ezequiel Benitez\Desktop\curso EF\PeliculasASPEntityFramework\Peliculas
 C:\Users\Ezequiel Benitez\Desktop\curso EF\PeliculasASPEntityFramework\PeliculasEntityFrameworkASP\EFCorePeliculas\bin\Debug\net6.0\NetTopologySuite.dll
 C:\Users\Ezequiel Benitez\Desktop\curso EF\PeliculasASPEntityFramework\PeliculasEntityFrameworkASP\EFCorePeliculas\bin\Debug\net6.0\NetTopologySuite.IO.SqlServerBytes.dll
 C:\Users\Ezequiel Benitez\Desktop\curso EF\PeliculasASPEntityFramework\PeliculasEntityFrameworkASP\EFCorePeliculas\obj\Debug\net6.0\EFCoreSqlServerNetTopologySuite.cs
+C:\Users\ezequ\OneDrive\Desktop\C#\EFCorePeliculas\EFCorePeliculas\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite.dll
+C:\Users\ezequ\OneDrive\Desktop\C#\EFCorePeliculas\EFCorePeliculas\bin\Debug\net6.0\NetTopologySuite.dll
+C:\Users\ezequ\OneDrive\Desktop\C#\EFCorePeliculas\EFCorePeliculas\bin\Debug\net6.0\NetTopologySuite.IO.SqlServerBytes.dll
+C:\Users\ezequ\OneDrive\Desktop\C#\EFCorePeliculas\EFCorePeliculas\obj\Debug\net6.0\EFCoreSqlServerNetTopologySuite.cs

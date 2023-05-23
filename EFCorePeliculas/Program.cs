@@ -9,7 +9,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-var connectionString = builder.Configuration.GetConnectionString("KelyxConnection");
+var connectionString = builder.Configuration.GetConnectionString("BanghoConnection");
 builder.Services.AddDbContext<AplicacionDbContext>(opciones => opciones.UseSqlServer(connectionString, sqlServer => sqlServer.UseNetTopologySuite()));
 
 var app = builder.Build();
