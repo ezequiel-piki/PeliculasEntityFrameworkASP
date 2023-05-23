@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ezequ\\OneDrive\\Desktop\\C#\\EFCorePeliculas\\EFCorePeliculas\\EFCorePeliculas.csproj": {}
+    "C:\\Users\\Ezequiel Benitez\\Desktop\\curso EF\\ProyectoPeliculas\\PeliculasEntityFrameworkASP\\EFCorePeliculas\\EFCorePeliculas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ezequ\\OneDrive\\Desktop\\C#\\EFCorePeliculas\\EFCorePeliculas\\EFCorePeliculas.csproj": {
+    "C:\\Users\\Ezequiel Benitez\\Desktop\\curso EF\\ProyectoPeliculas\\PeliculasEntityFrameworkASP\\EFCorePeliculas\\EFCorePeliculas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ezequ\\OneDrive\\Desktop\\C#\\EFCorePeliculas\\EFCorePeliculas\\EFCorePeliculas.csproj",
+        "projectUniqueName": "C:\\Users\\Ezequiel Benitez\\Desktop\\curso EF\\ProyectoPeliculas\\PeliculasEntityFrameworkASP\\EFCorePeliculas\\EFCorePeliculas.csproj",
         "projectName": "EFCorePeliculas",
-        "projectPath": "C:\\Users\\ezequ\\OneDrive\\Desktop\\C#\\EFCorePeliculas\\EFCorePeliculas\\EFCorePeliculas.csproj",
-        "packagesPath": "C:\\Users\\ezequ\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ezequ\\OneDrive\\Desktop\\C#\\EFCorePeliculas\\EFCorePeliculas\\obj\\",
+        "projectPath": "C:\\Users\\Ezequiel Benitez\\Desktop\\curso EF\\ProyectoPeliculas\\PeliculasEntityFrameworkASP\\EFCorePeliculas\\EFCorePeliculas.csproj",
+        "packagesPath": "C:\\Users\\Ezequiel Benitez\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ezequiel Benitez\\Desktop\\curso EF\\ProyectoPeliculas\\PeliculasEntityFrameworkASP\\EFCorePeliculas\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ezequ\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Ezequiel Benitez\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

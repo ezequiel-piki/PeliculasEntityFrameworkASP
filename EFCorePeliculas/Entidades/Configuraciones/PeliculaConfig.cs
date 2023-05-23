@@ -10,7 +10,7 @@ namespace EFCorePeliculas.Entidades.Configuraciones
         {
             builder.Property(prop => prop.Titulo).HasMaxLength(250).IsRequired();
 
-            builder.Property(prop => prop.PosterUrl).HasMaxLength(500).IsUnicode(false);
+            builder.Property(prop => prop.PosterURL).HasMaxLength(500).IsUnicode(false);
         }
     }
 }
