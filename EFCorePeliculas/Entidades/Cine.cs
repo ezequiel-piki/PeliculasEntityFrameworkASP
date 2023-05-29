@@ -9,7 +9,7 @@ namespace EFCorePeliculas.Entidades
         public int Id { get; set; }
         public string Nombre { get; set; }
 
-        [Precision(precision:9,scale:2)]
+       // [Precision(precision:9,scale:2)]
         public NetTopologySuite.Geometries.Point Ubicacion { get; set; }
         public CineOferta CineOferta { get; set; }
         public HashSet<SalaDeCine> SalasDeCine { get; set; }    
