@@ -347,3 +347,5 @@ C:\Users\Ezequiel Benitez\Desktop\curso EF\PeliculasEntityFrameworkASP\EFCorePel
 C:\Users\Ezequiel Benitez\Desktop\curso EF\PeliculasEntityFrameworkASP\EFCorePeliculas\obj\Debug\net6.0\EFCorePeliculas.pdb
 C:\Users\Ezequiel Benitez\Desktop\curso EF\PeliculasEntityFrameworkASP\EFCorePeliculas\obj\Debug\net6.0\EFCorePeliculas.genruntimeconfig.cache
 C:\Users\Ezequiel Benitez\Desktop\curso EF\PeliculasEntityFrameworkASP\EFCorePeliculas\obj\Debug\net6.0\ref\EFCorePeliculas.dll
+C:\Users\Ezequiel Benitez\Desktop\curso EF\PeliculasEntityFrameworkASP\EFCorePeliculas\bin\Debug\net6.0\Castle.Core.dll
+C:\Users\Ezequiel Benitez\Desktop\curso EF\PeliculasEntityFrameworkASP\EFCorePeliculas\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Proxies.dll

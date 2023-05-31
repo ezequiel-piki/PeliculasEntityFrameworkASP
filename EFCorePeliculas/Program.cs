@@ -17,6 +17,7 @@ builder.Services.AddDbContext<AplicacionDbContext>(opciones =>
 {
     opciones.UseSqlServer(connectionString, sqlServer => sqlServer.UseNetTopologySuite());
     opciones.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
+   // opciones.UseLazyLoadingProxies();
 }
 );
 
