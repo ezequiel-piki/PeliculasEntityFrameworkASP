@@ -61,6 +61,25 @@ namespace EFCorePeliculas.Controllers
                 .Take(2)
                 .ToListAsync();
             return generos;
-        } 
+        }
+
+        [HttpPost]
+        public async Task<ActionResult> Post(Genero genero)
+        {
+            var status1 = _context.Entry(genero).State;
+            _context.Generos.Add(genero);
+            var status2 = _context.Entry(genero).State;
+            await _context.SaveChangesAsync();
+            var status3 = _context.Entry(genero).State;
+            return Ok();
+        }
+
+        [HttpPost("varios")]
+        public async Task<ActionResult> Post(Genero[] generos)
+        {
+            _context.AddRange(generos);
+            await _context.SaveChangesAsync();
+            return Ok();    
+        }
     }
 }

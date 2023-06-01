@@ -4,6 +4,7 @@ using EFCorePeliculas.DTOs;
 using EFCorePeliculas.Entidades;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Formats.Asn1;
 
 namespace EFCorePeliculas.Controllers
 {
@@ -127,6 +128,71 @@ namespace EFCorePeliculas.Controllers
            // peliculaDTO.Cines = peliculaDTO.Cines.DistinctBy(x => x.Id).ToList();
 
             return peliculasDTOs;
+        }
+        [HttpGet("agrupadasPorEstreno")]
+        public async Task <ActionResult> GetAgrupadasPorCartelera()
+        {
+            var peliculasAgrupadas = await _context.Peliculas
+                                      .GroupBy(p => p.EnCartelera)
+                                      .Select(g => new
+                                      {
+                                          EnCartelera = g.Key,
+                                          Conteo = g.Count(),
+                                          Peliculas = g.ToList()
+                                      })
+                                      .ToListAsync();
+            return Ok(peliculasAgrupadas);
+        }
+
+        [HttpGet("agrupadasPorCantidadDeGeneros")]
+        public async Task<ActionResult> GetAgrupadasPorCantidadDeGenero()
+        {
+            var peliculasAgrupadas = await _context.Peliculas
+                                         .GroupBy(P => P.Generos.Count())
+                                         .Select(g => new 
+                                         { 
+                                             Conteo = g.Key,
+                                             Titulos = g.Select(x => x.Titulo),
+                                             Generos = g.Select(p => p.Generos )
+                                             .SelectMany(gen => gen)
+                                             .Select(gen => gen.Nombre)
+                                             .Distinct()
+                                         })
+                                         .ToListAsync();
+            return Ok(peliculasAgrupadas);
+        }
+
+        [HttpGet("filtrar")]
+        public async Task<ActionResult<List<PeliculaDTO>>> Filtrar([FromQuery] PeliculasFiltroDTO peliculasFiltroDTO)
+        {
+            var peliculasQueryable = _context.Peliculas.AsQueryable();
+
+            if (!string.IsNullOrEmpty(peliculasFiltroDTO.Titulo))
+            {
+                peliculasQueryable = peliculasQueryable.Where( p => p.Titulo.Contains(peliculasFiltroDTO.Titulo));
+            }
+
+            if (peliculasFiltroDTO.EnCartelera)
+            {
+                peliculasQueryable = peliculasQueryable.Where(x => x.EnCartelera);
+            }
+
+            if (peliculasFiltroDTO.ProximosEstrenos)
+            {
+                var hoy = DateTime.Today;
+                peliculasQueryable = peliculasQueryable.Where(p => p.FechaEstreno > hoy);
+            }
+
+            if(peliculasFiltroDTO.GeneroId != 0)
+            {
+                peliculasQueryable = peliculasQueryable
+                    .Where(p => p.Generos
+                    .Select(g => g.Identificador)
+                    .Contains(peliculasFiltroDTO.GeneroId)
+                    );
+            }
+            var peliculas = await peliculasQueryable.Include(p => p.Generos).ToListAsync();
+            return _mapper.Map<List<PeliculaDTO>>(peliculas);
         }
     }
 }
